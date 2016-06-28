@@ -12,7 +12,7 @@ namespace StudentRegistration
         private string employer;
         private DateTime registrationDate;
 
-        public Student(string sal, string first, string last, string strAdd, string zp, string ph, string cb, string mb, DateTime md,string sID, string emp) : base(sal, first,  last, strAdd, zp, ph, cb, mb, md)
+        public Student(string sal, string first, string last, string strAdd, string zp, string ph, string cb, DateTime cd, string mb, DateTime md,string sID, string emp) : base(sal, first,  last, strAdd, zp, ph, cb, cd, mb, md)
         {
             StudentID = sID;
             Employer = emp;

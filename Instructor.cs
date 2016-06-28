@@ -10,7 +10,7 @@ namespace StudentRegistration
     {
         private string instructorID;
 
-        public Instructor(string sal, string first, string last, string strAdd, string zp, string ph, string cb, string mb, DateTime md, string iID) : base(sal, first, last, strAdd, zp, ph, cb, mb, md)
+        public Instructor(string sal, string first, string last, string strAdd, string zp, string ph, string cb, DateTime cd, string mb, DateTime md, string iID) : base(sal, first, last, strAdd, zp, ph, cb,cd, mb, md)
         {
             InstructorID = iID;
         }

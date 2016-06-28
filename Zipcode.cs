@@ -12,15 +12,17 @@ namespace StudentRegistration
         private string city;
         private string state;
         private string createdBy;
+        private DateTime createdDate;
         private string modifiedBy;
         private DateTime modifiedDate;
 
-        public Zipcode(string zp, string city, string st, string cb, string mb, DateTime md)
+        public Zipcode(string zp, string city, string st, string cb, DateTime cd, string mb, DateTime md)
         {
             Zip = zp;
             City = city;
             State = st;
             CreatedBy = cb;
+            CreatedDate = cd;
             ModifiedBy = mb;
             ModifiedDate = md;
 
@@ -30,6 +32,7 @@ namespace StudentRegistration
         public string City { get; set; }
         public string State { get; set; }
         public string CreatedBy { get; set; }
+        public DateTime CreatedDate { get; set; }
         public string ModifiedBy { get; set; }
         public DateTime ModifiedDate { get; set; }
     }

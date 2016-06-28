@@ -13,16 +13,18 @@ namespace StudentRegistration
         private DateTime enrollDate;
         private string finalGrade;
         private string createdBy;
+        private DateTime createdDate;
         private string modifiedBy;
         private DateTime modifiedDate;
 
-        public Enrollment(string sID, string secID, DateTime enrDate, string fgrade, string cb, string mb, DateTime md)
+        public Enrollment(string sID, string secID, DateTime enrDate, string fgrade, string cb, DateTime cd, string mb, DateTime md)
         {
             StudentID = sID;
             SectionID = secID;
             EnrollDate = enrDate;
             FinalGrade = fgrade;
             CreatedBy = cb;
+            CreatedDate = cd;
             ModifiedBy = mb;
             ModifiedDate = md;
 
@@ -33,6 +35,7 @@ namespace StudentRegistration
         public DateTime EnrollDate { get; set; }
         public string FinalGrade { get; set; }
         public string CreatedBy { get; set; }
+        public DateTime CreatedDate { get; set; }
         public string ModifiedBy { get; set; }
         public DateTime ModifiedDate { get; set; }
     }

@@ -15,10 +15,11 @@ namespace StudentRegistration
         private string zip;
         private string phone;
         private string createdBy;
+        private DateTime createdDate;
         private string modifiedBy;
         private DateTime modifiedDate;
 
-        public Person(string sal, string first, string last, string strAdd, string zp, string ph, string cb, string mb, DateTime md)
+        public Person(string sal, string first, string last, string strAdd, string zp, string ph, string cb, DateTime cd, string mb, DateTime md)
         {
             Salutation = sal;
             FirstName = first;
@@ -27,6 +28,7 @@ namespace StudentRegistration
             Zip = zp;
             Phone = ph;
             CreatedBy = cb;
+            CreatedDate = cd;
             ModifiedBy = mb;
             ModifiedDate = md;
 
@@ -39,6 +41,7 @@ namespace StudentRegistration
         public string Zip { get; set; }
         public string Phone { get; set; }
         public string CreatedBy { get; set; }
+        public DateTime CreatedDate { get; set; }
         public string ModifiedBy { get; set; }
         public DateTime ModifiedDate { get; set; }
     }
